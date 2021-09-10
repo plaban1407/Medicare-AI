@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2><CENTER>CARDIAC DISEASE PREDICTOR</CENTER></h2>
+
+<form action="/your-cardio" method="POST">
+    <p><h5>What is your age?</h5></p>
+    <input  type="text" placeholder="Enter age", name="age"><br><br>
+    <p><h5>What is your gender?</h5></p>
+    <input  type="radio" name="sex" value="1"> Male
+    <input type="radio" name="sex" value="0"> Female
+    <p><h5>Do you have chest pain?</h5></p>
+    <input  type="radio" name="cp" value="1"> Typical angina
+    <input type="radio" name="cp" value="2"> Atypical angina
+    <input  type="radio" name="cp" value="3"> Non-anginal pain
+    <input type="radio" name="cp" value="4"> Asymptomatic
+    <p><h5>Enter blood pressure</h5></p>
+    <input  type="text" placeholder="Enter resting blood pressure", name="trestbps"><br><br>
+    <p><h5>Enter blood cholesterol in mg/dl</h5></p>
+    <input type="text" placeholder="Enter serum cholesterol in mg/dl", name="chol"><br><br>
+    <p><h5>Enter fasting blood sugar</h5></p>
+    <input  type="radio" name="fbs" value="1"> High
+    <input type="radio" name="fbs" value="0"> Normal
+    <p><h5>Enter resting electrocardiographic results</h5></p>
+    <input  type="radio" name="fbs" value="0"> High
+    <input type="radio" name="fbs" value="0"> Normal
+    <input class="form-control form-control-lg" type="text" placeholder="Enter resting electrocardiographic results (values 0,1,2)", name="restecg"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter maximum heart rate achieved", name="thalach"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter exercise induced angina", name="exang"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter ST depression induced by exercise relative to rest", name="oldpeak"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter the slope of the peak exercise ST segment", name="slope"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter number of major vessels (0-3) colored by flourosopy", name="ca"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter thal: 3 = normal; 6 = fixed defect; 7 = reversable defect", name="thal"><br><br>
+
+    <center><button type="submit" class="btn btn-primary btn-lg">Submit</button></center>
+    
+</form>
+
+
+{% endblock %}

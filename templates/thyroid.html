@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br><br>
+
+    {% if thyroid ==  '1' %}
+    <center><h2> You may have a thyroid level is normal, visiting a doctor is not necessary </h2></center><br>
+<!--    {% else %}-->
+<!--    <center><h2>abs</h2></center><br>-->
+    {% endif %}
+
+    {% if thyroid ==  '2' %}
+    <center><h2> You may have a hype thyroid problem, please visit a doctor </h2></center><br>
+<!--    {% else %}-->
+<!--    <center><h2></h2></center><br>-->
+    {% endif %}
+
+    {% if thyroid ==  '3' %}
+    <center><h2> You may have a hypo thyroid problem, please visit a doctor </h2></center><br>
+<!--    {% else %}-->
+<!--    <center><h2></h2></center><br>-->
+    {% endif %}
+
+<br>
+
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br><br>
+
+    {% if cardio ==  '0' %}
+    <center><h2>You may have normal cardiac functioning, visiting doctors may not be necessary</h2></center><br>
+    {% endif %}
+
+    {% if cardio ==  '1' %}
+    <center><h2> You may have a mild cardiac disease, you may visit a cardiologist </h2></center><br>
+    {% endif %}
+
+    {% if cardio ==  '2' %}
+    <center><h2> You may have a moderate cardiac disease, please visit a cardiologist </h2></center><br>
+    {% endif %}
+
+    {% if cardio ==  '3' %}
+    <center><h2> You may have a severe cardiac disease, please visit a cardiologist </h2></center><br>
+    {% endif %}
+
+    {% if cardio ==  '4' %}
+    <center><h2> You may have a high risk cardiac disease, please visit a cardiologist immediately</h2></center><br>
+    {% endif %}
+
+<br>
+
+
+{% endblock %}

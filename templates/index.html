@@ -1,0 +1,95 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+  <div class="row">
+
+      <div class="col-lg-3 mb-3">
+<!--          <img class="card-img-top" src="https://images.unsplash.com/photo-1580756338357-a0ba1932d879?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">-->
+          <img class="card-img-top" src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/rich_media_quiz/topic/rmq_heart_anatomy/405x225_getty_rf_illustration_of_heart.jpg" alt="">
+          <div class="card-body">
+              <h5 class="card-title">Cardio checker</h5>
+              <p class="card-text">Type the details to know the condition of your heart</p>
+              <a href="{{ url_for('cardio') }}" class="btn btn-outline-success btn-sm">Go there</a>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+<!--          <img class="card-img-top" src="https://images.unsplash.com/photo-1523312727315-7c6ae09c3d09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">-->
+          <img class="card-img-top" src="https://hhp-blog.s3.amazonaws.com/2019/05/GettyImages-843352558-300x208.jpg" alt="">
+          <div class="card-body">
+              <h5 class="card-title">Kidney checker</h5>
+              <p class="card-text">Type the details to know the condition of your kidney</p>
+              <a href="{{ url_for('kidney') }}" class="btn btn-outline-success btn-sm">Go there</a>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+          <img class="card-img-top" src="https://res.cloudinary.com/grohealth/image/upload/$wpsize_!_cld_full!,w_1200,h_630,c_scale/v1588092441/Secondary-Diabetes.png" alt="">
+<!--        <img class="card-img-top" src="https://images.unsplash.com/photo-1592030581891-6ebac71d3af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1028&q=80" alt="">-->
+        <div class="card-body">
+            <h5 class="card-title">Diabetes checker</h5>
+            <p class="card-text">Type the details to know the if are a diabetic or not</p>
+            <a href="{{ url_for('diabetes') }}" class="btn btn-outline-success btn-sm">Go there</a>
+        </div>
+
+    </div>
+      <div class="col-lg-3 mb-3">
+          <img class="card-img-top" src="https://www.spineuniverse.com/sites/default/files/imagecache/gallery-large/wysiwyg_imageupload/3998/2020/03/09/thyroid_gland_iStock-1142625242.jpg" alt="">
+<!--        <img class="card-img-top" src="https://images.unsplash.com/photo-1592030581891-6ebac71d3af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1028&q=80" alt="">-->
+        <div class="card-body">
+            <h5 class="card-title">Thyroid checker</h5>
+            <p class="card-text">Type the details to know if you have Thyroid Disorders</p>
+            <a href="{{ url_for('thyroid') }}" class="btn btn-outline-success btn-sm">Go there</a>
+        </div>
+
+    </div>
+
+  </div>
+    <div class="row">
+
+      <div class="col-lg-3 mb-3">
+<!--          <img class="card-img-top" src="https://images.unsplash.com/photo-1580756338357-a0ba1932d879?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">-->
+          <img class="card-img-top" src="https://ivonnesanchez.com/wp-content/uploads/2020/01/Beautiful-woman-pressing-acne-pimple-in--1024x575.jpg" alt="">
+          <div class="card-body">
+              <h5 class="card-title">Acne checker</h5>
+              <p class="card-text">Type the details to know the severity of your acne problems</p>
+              <a href="{{ url_for('cardio') }}" class="btn btn-outline-success btn-sm">Go there</a>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+<!--          <img class="card-img-top" src="https://images.unsplash.com/photo-1523312727315-7c6ae09c3d09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">-->
+          <img class="card-img-top" src="https://www.parkinson.org/sites/default/files/neurons%20.jpg" alt="">
+          <div class="card-body">
+              <h5 class="card-title">Parkinsons checker</h5>
+              <p class="card-text">Type the details to know if you have Parkinsons disease or not</p>
+              <a href="{{ url_for('kidney') }}" class="btn btn-outline-success btn-sm">Go there</a>
+          </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+          <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/eYDAHvrUtDqUwNmkXJjSvc-1024-80.jpg.webp" alt="">
+<!--        <img class="card-img-top" src="https://images.unsplash.com/photo-1592030581891-6ebac71d3af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1028&q=80" alt="">-->
+        <div class="card-body">
+            <h5 class="card-title">Acute Inflammation checker</h5>
+            <p class="card-text">Type the details to know if you are suffering from Acute Inflammation</p>
+            <a href="{{ url_for('cardio') }}" class="btn btn-outline-success btn-sm">Go there</a>
+        </div>
+
+    </div>
+      <div class="col-lg-3 mb-3">
+          <img class="card-img-top" src="https://drdalmao.com/wp-content/uploads/2019/02/RespDx.png" alt="">
+<!--        <img class="card-img-top" src="https://images.unsplash.com/photo-1592030581891-6ebac71d3af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1028&q=80" alt="">-->
+        <div class="card-body">
+            <h5 class="card-title">Respiratory diseases checker</h5>
+            <p class="card-text">Type the details to know if you have respiratory diseases or not</p>
+            <a href="{{ url_for('cardio') }}" class="btn btn-outline-success btn-sm">Go there</a>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+{% endblock %}

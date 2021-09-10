@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br><br>
+
+    {% if diabetes ==  '1' %}
+    <center><h2> You may have diabetes, please visit a doctor </h2></center><br>
+    {% else %}
+    <center><h2> You may not have a diabetes, visiting a doctor is not necessary </h2></center><br>
+    {% endif %}
+
+<br>
+
+
+{% endblock %}

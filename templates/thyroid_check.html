@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2><CENTER>Thyroid Predictor</CENTER></h2>
+
+<form action="/your-thyroid" method="POST">
+    <input class="form-control form-control-lg" type="text" placeholder="Enter T3-Resin Value", name="t3_resin"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter Serum Thyroxin Value", name="serum_thyroxin"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter serum Triiodothyronine Value", name="serum_triiodothyronine"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter TSH Value", name="tsh"><br><br>
+    <input class="form-control form-control-lg" type="text" placeholder="Enter AD-TSH Value", name="ad_tsh"><br><br>
+
+    <center><button type="submit" class="btn btn-primary btn-lg">Submit</button></center>
+    
+</form>
+
+
+{% endblock %}
